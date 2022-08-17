@@ -24,6 +24,27 @@
         <label for="email">Email:</label> <input type="email" name="Email" id="email" required>
         <label for="contraseña">Contraseña:</label> <input type="password" name="Contraseña" id="contraseña" required>
        <label for="color">Color:</label> <input type="color" name="Color" id="color">
+       <div>
+        <label for="">Genero:</label><br>
+        <input type="radio" id="macho" name="genero" value="macho" required>
+        <label for="macho">Macho</label><br>
+        <input type="radio" id="hembra" name="genero" value="hembra" required>
+        <label for="hembra">Hembra</label><br>
+       </div>
+       <label for="tipo_de_mascota">Tipo de mascota:</label>
+       <select name="tipo_de_mascota" id="tipo_de_mascota" required>
+        <option value="Gato">Gato</option>
+        <option value="Perro">Perro</option>
+        <option value="Cobayo">Cobayo</option>
+        <option value="Hamster">Hamster</option>
+        <option value="Oto">Otro</option>
+       </select>
+       <div class="bases_y_cond">
+       <label for="b_y_c">Acepto las bases  y condiciones</label>
+       <input type="checkbox" value="acepta" name="bases\_y\_condiciones" id="b_y_c" required>
+       </div>
+       <label for="texto_mi_mascota">Contanos como es tu mascota:</label>
+       <textarea name="acerca_de_mi_mascota" id="texto_mi_mascota" cols="40" rows="10" placeholder="¿Cual es su juego favorita?¿Que le gusta comer?" required></textarea>
        <button type="submit">Crear</button>
     </form>
     </div>
